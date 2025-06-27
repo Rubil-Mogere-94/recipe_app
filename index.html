@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>Recipe Finder</h1>
+      <div class="search-container">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search recipes...">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Landing Page -->
+    <div id="landing-page">
+      <div class="home-features">
+        <!-- Left side buttons -->
+        <div class="feature-column">
+          <div class="feature-card">
+            <button id="favorites-btn" class="feature-btn">
+              <i class="fas fa-heart"></i>
+              <span>My Favorites</span>
+            </button>
+            <p>Save your favorite recipes for quick access</p>
+          </div>
+          
+          <div class="feature-card">
+            <button id="quickmeals-btn" class="feature-btn">
+              <i class="fas fa-clock"></i>
+              <span>Quick Meals</span>
+            </button>
+            <p>Delicious recipes ready in under 30 minutes</p>
+          </div>
+
+          <div class="feature-card">
+            <button id="challenges-btn" class="feature-btn">
+              <i class="fas fa-trophy"></i>
+              <span>Cooking Challenges</span>
+            </button>
+            <p>Weekly culinary challenges to test your skills</p>
+          </div>
+        </div>
+        
+        <!-- Hero section -->
+        <div class="hero">
+          <h2>Discover Amazing Recipes</h2>
+          <p>Find your next culinary adventure with our collection of delicious recipes</p>
+          <button id="landing-surprise-btn" class="large-btn">
+            <i class="fas fa-dice"></i> Surprise Me!
+          </button>
+        </div>
+        
+        <!-- Right side buttons -->
+        <div class="feature-column">
+          <div class="feature-card">
+            <button id="categories-btn" class="feature-btn">
+              <i class="fas fa-utensils"></i>
+              <span>Categories</span>
+            </button>
+            <p>Explore recipes by category</p>
+          </div>
+          
+          <div class="feature-card">
+            <button id="seasonal-btn" class="feature-btn">
+              <i class="fas fa-leaf"></i>
+              <span>Seasonal Specials</span>
+            </button>
+            <p>Recipes featuring fresh seasonal ingredients</p>
+          </div>
+
+          <div class="feature-card">
+            <button id="global-btn" class="feature-btn">
+              <i class="fas fa-globe-americas"></i>
+              <span>Global Cuisine</span>
+            </button>
+            <p>Explore authentic dishes from around the world</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Favorites panel -->
+      <div id="favorites-panel" class="hidden">
+        <h3><i class="fas fa-heart"></i> My Favorite Recipes</h3>
+        <div id="favorites-list"></div>
+        <button id="back-from-favorites-btn" class="btn-back">
+          <i class="fas fa-arrow-left"></i> Back
+        </button>
+      </div>
+    </div>
+    
+    <!-- Recipe Detail View -->
+    <div id="recipe-container" class="hidden">
+      <button id="back-from-recipe-btn" class="btn-back"><i class="fas fa-arrow-left"></i> Back</button>
+      <h2 id="recipe-title">Recipe Name</h2>
+      <div class="recipe-content">
+        <div class="recipe-image">
+          <img id="recipe-img" src="" alt="">
+        </div>
+        <div class="recipe-details">
+          <div class="recipe-meta">
+            <span id="recipe-category"><i class="fas fa-tag"></i> Category</span>
+            <span id="recipe-area"><i class="fas fa-globe"></i> Origin</span>
+            <span id="recipe-time"><i class="fas fa-clock"></i> Prep Time</span>
+          </div>
+          
+          <div class="recipe-detail-content">
+            <div class="ingredients-section">
+              <h3><i class="fas fa-carrot"></i> Ingredients</h3>
+              <ul id="ingredients-list"></ul>
+            </div>
+            
+            <div class="instructions-section">
+              <h3><i class="fas fa-list-ol"></i> Instructions</h3>
+              <div id="instructions-content"></div>
+            </div>
+          </div>
+          
+          <div class="recipe-actions">
+            <button id="new-surprise-btn" class="large-btn"><i class="fas fa-dice"></i> Another Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Search Results View -->
+    <div id="search-results" class="hidden">
+      <div class="page-header">
+        <button id="back-from-search-btn" class="btn-back"><i class="fas fa-arrow-left"></i></button>
+        <h2>Search Results for "<span id="search-term-display"></span>"</h2>
+      </div>
+      <div id="results-container" class="results-grid"></div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Recipe Finder | Powered by TheMealDB</p>
+    <p class="credits">Created with <i class="fas fa-heart"></i> for food lovers</p>
+  </footer>
+  
+  <script src="/src/script.js"></script>
+</body>
+</html>
