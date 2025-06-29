@@ -26,7 +26,7 @@ const API_BASE = 'https://www.themealdb.com/api/json/v1/';
 // Initialize favorites
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-// Initialize the app
+// Initialize app
 function init() {
   updateNavState();
   hideFavorites(); // Ensure favorites panel starts hidden

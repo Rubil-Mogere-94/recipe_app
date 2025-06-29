@@ -1106,7 +1106,7 @@ button:focus, input:focus {
   to { opacity: 1; }
 }
 
-/* Responsive adjustments */
+/*  adjustments */
 @media (max-width: 768px) {
   .header-top {
     flex-wrap: wrap;
