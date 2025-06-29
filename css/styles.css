@@ -685,6 +685,14 @@ body.dark-mode #instructions-content {
   background: linear-gradient(to right, #6ab04c, var(--secondary));
 }
 
+.share-btn {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+}
+
+.share-btn::before {
+  background: linear-gradient(to right, #2c3e50, #3498db);
+}
+
 /* Search Results View */
 #search-results {
   max-width: 1400px;
@@ -942,10 +950,10 @@ body.dark-mode .error-state p {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  padding: 15px 25px;
+  padding: 15px 25px 15px 20px;
   background: var(--primary);
   color: white;
-  border-radius: 100px;
+  border-radius: 12px;
   box-shadow: 0 10px 25px rgba(139, 69, 19, 0.3);
   opacity: 0;
   transform: translateY(20px);
@@ -954,11 +962,18 @@ body.dark-mode .error-state p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .toast-notification.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.toast-notification i {
+  font-size: 1.2rem;
 }
 
 /* Loading Spinner */
@@ -1041,6 +1056,54 @@ footer p {
 
 body.dark-mode .recipe-card .challenge-info {
   background: rgba(139, 69, 19, 0.1);
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 99;
+  transition: var(--transition);
+}
+
+.back-to-top-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-5px);
+}
+
+/* Lazy loading styles */
+img.lazyload {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+img.lazyloaded {
+  opacity: 1;
+}
+
+/* Focus states for accessibility */
+button:focus, input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Animation for new elements */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Responsive adjustments */

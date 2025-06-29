@@ -305,7 +305,7 @@ function displaySearchResults(meals) {
     `;
   }).join('');
 
-  // Update click handler to fetch full recipe details
+  // Add click handlers to recipe cards
   document.querySelectorAll('.recipe-card').forEach(card => {
     card.addEventListener('click', () => {
       const mealId = card.dataset.id;
