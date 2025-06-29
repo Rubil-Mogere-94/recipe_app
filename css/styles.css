@@ -1100,7 +1100,6 @@ button:focus, input:focus {
   outline-offset: 2px;
 }
 
-/* Animation for new elements */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
