@@ -1094,7 +1094,7 @@ img.lazyloaded {
   opacity: 1;
 }
 
-/* Focus states for accessibility */
+
 button:focus, input:focus {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
