@@ -1,8 +1,4 @@
-Your README is already well-organized and visually appealing — great job! To make it fully GitHub-ready, you just need to wrap the entire content in a code block with the correct language identifier removed (you currently have \`\`\`markdown, which is not necessary inside a markdown `.md` file on GitHub). Here's the cleaned-up version ready to be copied directly into a `README.md` file in your GitHub repo:
 
----
-
-````md
 # 🍳 Recipe Finder - Your Culinary Discovery App  
 **Find, save, and explore a world of delicious recipes** - all in one place. Recipe Finder is your smart kitchen companion powered by [TheMealDB API](https://www.themealdb.com/).
 
