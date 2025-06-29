@@ -9,6 +9,10 @@ Recipe Finder is your smart kitchen companion powered by [TheMealDB API](https:/
 [![Vercel](https://img.shields.io/badge/Try_Live_Demo-000000?style=for-the-badge\&logo=vercel)](https://recipe-app-kappa-flax.vercel.app/)
 ✨ Experience the app instantly without installation!
 
+## 📽️ Presentation
+
+[📂 View Project Presentation](https://drive.google.com/file/d/1oXwInBZEIJmgClvwcNH7kzI178YYA0ta/view?pli=1)
+
 ---
 
 ## 🌟 Key Features
@@ -134,4 +138,3 @@ Recipe Finder is your smart kitchen companion powered by [TheMealDB API](https:/
 
 **Bon Appétit!** 👨‍🍳👩‍🍳
 Made with ❤️ by food lovers, for food lovers.
-
