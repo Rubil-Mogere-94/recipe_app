@@ -634,7 +634,7 @@ body.dark-mode #instructions-content {
   margin-top: 40px;
 }
 
-/* Modern Button Styles */
+
 .large-btn {
   padding: 16px 36px;
   background: linear-gradient(to right, var(--accent), var(--primary-light));
